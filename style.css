@@ -418,7 +418,38 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 56
   .stat-sep { display: none; }
   .stat-num { font-size: 18px; -webkit-text-fill-color: var(--fg); }
   .stat-label { font-size: 11px; }
-  .scroll-hint { bottom: 16px; }
+  /* Remplace la souris par un filet de lumière */
+  .scroll-mouse, .scroll-hint-text { display: none; }
+  .scroll-hint {
+    bottom: 0;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 80px;
+    display: block;
+    overflow: hidden;
+    background: linear-gradient(to bottom, transparent, var(--border));
+    border-radius: 99px;
+  }
+  .scroll-hint-inner { display: none; }
+  .scroll-hint::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+    border-radius: 99px;
+    animation: lightDrop 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  @keyframes lightDrop {
+    0%   { top: -40px; opacity: 0; }
+    20%  { opacity: 1; }
+    80%  { opacity: 1; }
+    100% { top: 80px; opacity: 0; }
+  }
 
   .apple-scroll-section { display: none; }
 
