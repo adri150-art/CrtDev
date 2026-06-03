@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrtDev — Sites web modernes</title>
+  <meta name="description" content="Je crée votre site web professionnel à partir de 150€. Design moderne, livraison rapide, sans prise de tête." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Crt<span>Dev</span></a>
+      <nav aria-label="Navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#realisations">Exemples</a></li>
+          <li><a href="#tarif">Tarif</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <a href="#contact" class="btn btn-primary btn-nav">Me contacter</a>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Navigation mobile">
+      <ul role="list">
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#realisations" class="mobile-link">Exemples</a></li>
+        <li><a href="#tarif" class="mobile-link">Tarif</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-lg btn-full mobile-cta">Démarrer mon site</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-section" id="hero">
+      <div class="aurora" aria-hidden="true">
+        <div class="aurora-blob a1"></div>
+        <div class="aurora-blob a2"></div>
+        <div class="aurora-blob a3"></div>
+      </div>
+      <div class="hero">
+        <div class="hero-inner">
+          <div class="hero-tag"><span class="dot"></span>Disponible — réponse sous 24h</div>
+          <h1 class="hero-title">Votre site web<br/><span class="gradient-text">pro à 150€.</span></h1>
+          <p class="hero-subtitle">Bonjour, je suis <strong>Adriano</strong>, étudiant en développement web.<br/>Je crée des sites modernes, rapides et soignés — à un prix que les agences ne peuvent pas se permettre.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary btn-lg">Démarrer mon site <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="#realisations" class="btn btn-ghost btn-lg">Voir des exemples</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">150€</span><span class="stat-label">Prix fixe, tout inclus</span></div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat"><span class="stat-num">~1 sem.</span><span class="stat-label">Délai de livraison</span></div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Sur-mesure</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal-on-scroll delay-1" aria-hidden="true">
+          <div class="browser-mockup float-animation">
+            <div class="browser-bar">
+              <span class="browser-dot red"></span><span class="browser-dot yellow"></span><span class="browser-dot green"></span>
+              <span class="browser-url">votre-site.fr</span>
+            </div>
+            <div class="browser-content">
+              <div class="mockup-hero">
+                <div class="mh-tag"></div><div class="mh-title"></div><div class="mh-title short"></div><div class="mh-sub"></div>
+                <div class="mh-btns"><div class="mh-btn primary"></div><div class="mh-btn ghost"></div></div>
+              </div>
+              <div class="mockup-cards">
+                <div class="mockup-card"><div class="mc-img"></div><div class="mc-lines"><div></div><div></div></div></div>
+                <div class="mockup-card"><div class="mc-img"></div><div class="mc-lines"><div></div><div></div></div></div>
+                <div class="mockup-card"><div class="mc-img"></div><div class="mc-lines"><div></div><div></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="scroll-hint-inner">
+          <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+          <span class="scroll-hint-text">Défiler</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANIMATION DE L'IDÉE À LA RÉALITÉ -->
+    <section id="evolution" class="apple-scroll-section" aria-hidden="true">
+      <div class="sticky-container">
+        <div class="evolution-text">
+          <h2 class="text-start">De l'idée...</h2>
+          <h2 class="text-final">...à la réalité.</h2>
+        </div>
+        <div class="mockup-3d-wrapper">
+          <div class="evolving-mockup">
+            <div class="em-browser-bar"><div class="em-dots"><span></span><span></span><span></span></div></div>
+            <div class="em-body">
+              <div class="em-nav"><div class="em-logo"></div><div class="em-links"><div class="em-link"></div><div class="em-link"></div><div class="em-link"></div></div></div>
+              <div class="em-hero"><div class="em-h1"></div><div class="em-h2"></div><div class="em-btn"></div></div>
+              <div class="em-grid">
+                <div class="em-card"><div class="em-c-img"></div><div class="em-c-line"></div></div>
+                <div class="em-card"><div class="em-c-img"></div><div class="em-c-line"></div></div>
+                <div class="em-card"><div class="em-c-img"></div><div class="em-c-line"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-title">
+      <div class="section-inner">
+        <div class="section-label">Ce que je crée</div>
+        <h2 class="section-heading" id="services-title">Un site adapté<br/>à votre besoin.</h2>
+        <div class="services-grid">
+          <article class="service-card featured-service">
+            <div class="service-badge">Le plus demandé</div>
+            <div class="service-icon accent"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3 class="service-title">Site Vitrine</h3>
+            <p class="service-desc">Présentez votre activité avec un site propre et professionnel. Idéal pour les artisans, commerces, freelances, associations.</p>
+            <ul class="service-list"><li>Design moderne sur-mesure</li><li>Fonctionne sur mobile et PC</li><li>Formulaire de contact inclus</li><li>Livré en environ 1 semaine</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></div>
+            <h3 class="service-title">Page de Vente</h3>
+            <p class="service-desc">Une page unique et percutante pour vendre un produit, promouvoir un service ou lancer une offre.</p>
+            <ul class="service-list"><li>Structure convaincante</li><li>Bouton d'action bien placé</li><li>Chargement ultra-rapide</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+            <h3 class="service-title">Refonte de Site</h3>
+            <p class="service-desc">Votre site existant fait vieillot ? Je le modernise complètement pour lui donner un coup de jeune.</p>
+            <ul class="service-list"><li>Nouveau design complet</li><li>Meilleure vitesse</li><li>Adapté au mobile</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m8 21 4-4 4 4"/></svg></div>
+            <h3 class="service-title">Portfolio / CV en ligne</h3>
+            <p class="service-desc">Mettez en valeur votre travail ou votre parcours avec un portfolio élégant qui fait la différence.</p>
+            <ul class="service-list"><li>Présentation de vos projets</li><li>Design qui vous ressemble</li><li>Facile à partager</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section id="realisations" aria-labelledby="realisations-title">
+      <div class="section-inner">
+        <div class="section-label">Exemples de design</div>
+        <h2 class="section-heading" id="realisations-title">Voilà ce que<br/>je sais faire.</h2>
+        <p class="section-intro">Ces maquettes montrent les types de sites que je peux créer pour vous.</p>
+        <div class="portfolio-grid">
+
+          <article class="portfolio-card large">
+            <div class="portfolio-visual v1">
+              <div class="pv-browser"><div class="pvb-bar"><span></span><span></span><span></span></div><div class="pvb-content"><div class="pvb-nav"></div><div class="pvb-hero"><div class="pvb-h1"></div><div class="pvb-h2"></div><div class="pvb-btn"></div></div><div class="pvb-grid"><div class="pvb-card"></div><div class="pvb-card"></div><div class="pvb-card"></div></div></div></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Site Vitrine</span>
+              <h3 class="portfolio-title">Design clair et moderne</h3>
+              <p class="portfolio-desc">Un site vitrine avec une page d'accueil accrocheuse, une présentation de vos services et un formulaire de contact.</p>
+              <div class="portfolio-features"><span>✓ Navigation simple</span><span>✓ Design épuré</span><span>✓ Appel à l'action clair</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-visual v2">
+              <div class="pv-phone"><div class="pvp-screen"><div class="pvp-header"></div><div class="pvp-img"></div><div class="pvp-lines"><div></div><div></div></div><div class="pvp-btn"></div></div></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">100% Mobile</span>
+              <h3 class="portfolio-title">Parfait sur téléphone</h3>
+              <p class="portfolio-desc">Tous les sites que je crée fonctionnent parfaitement sur mobile.</p>
+              <div class="portfolio-features"><span>✓ Responsive design</span><span>✓ Rapide à charger</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-visual v3">
+              <div class="pv-dashboard"><div class="pvd-header"><div></div><div></div></div><div class="pvd-stats"><div class="pvd-stat"></div><div class="pvd-stat"></div><div class="pvd-stat"></div></div><div class="pvd-chart"><div class="pvd-bar" style="height:40%"></div><div class="pvd-bar" style="height:70%"></div><div class="pvd-bar" style="height:55%"></div><div class="pvd-bar" style="height:85%"></div><div class="pvd-bar" style="height:60%"></div><div class="pvd-bar accent" style="height:95%"></div></div></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Page de vente</span>
+              <h3 class="portfolio-title">Présenter vos chiffres</h3>
+              <p class="portfolio-desc">Mettez en avant vos résultats avec des éléments visuels impactants.</p>
+              <div class="portfolio-features"><span>✓ Visuels percutants</span><span>✓ Données mises en valeur</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card large right">
+            <div class="portfolio-visual v4">
+              <div class="pv-browser dark"><div class="pvb-bar"><span></span><span></span><span></span></div><div class="pvb-content dark-content"><div class="pvb-nav dark"></div><div class="pvb-hero dark-hero"><div class="pvb-h1 dark"></div><div class="pvb-h2 dark"></div><div class="pvb-btn accent"></div></div><div class="pvb-feature-grid"><div class="pvb-feature"></div><div class="pvb-feature"></div><div class="pvb-feature"></div><div class="pvb-feature"></div></div></div></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Dark Mode</span>
+              <h3 class="portfolio-title">Style moderne en dark mode</h3>
+              <p class="portfolio-desc">Un design sombre et élégant pour un rendu haut de gamme. Je m'adapte à votre identité visuelle.</p>
+              <div class="portfolio-features"><span>✓ Design premium</span><span>✓ Adapté à votre image</span><span>✓ Animations soignées</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TARIF -->
+    <section id="tarif" class="pricing-section" aria-labelledby="tarif-title">
+      <div class="section-inner">
+        <div class="section-label">Transparence totale</div>
+        <h2 class="section-heading" id="tarif-title">Un seul tarif,<br/>tout inclus.</h2>
+        <div class="pricing-wrapper">
+          <div class="pricing-card">
+            <div class="pricing-top">
+              <div class="pricing-name">Site Web Complet</div>
+              <div class="pricing-price"><span class="price-amount">150€</span><span class="price-note">paiement unique</span></div>
+              <p class="pricing-desc">Tout ce dont vous avez besoin pour avoir un site web professionnel, sans surprise sur la facture.</p>
+            </div>
+            <ul class="pricing-list">
+              <li>Design 100% sur-mesure selon vos couleurs</li>
+              <li>Compatible mobile, tablette et ordinateur</li>
+              <li>Formulaire de contact fonctionnel</li>
+              <li>Livraison en environ 1 semaine</li>
+              <li>2 révisions pour ajuster à vos goûts</li>
+              <li>Code livré, vous gardez tout</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-lg btn-full">Commander mon site <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+          <div class="pricing-faq">
+            <h3 class="faq-title">Questions fréquentes</h3>
+            <div class="faq-list">
+              <div class="faq-item"><strong>Est-ce que c'est vraiment 150€ tout compris ?</strong><p>Oui. Le prix ne change pas sauf si vous demandez quelque chose de très spécifique. Dans ce cas je vous préviens avant de commencer.</p></div>
+              <div class="faq-item"><strong>Vous n'êtes pas une agence, c'est un risque ?</strong><p>Je suis étudiant en développement web, donc motivé à bien faire pour construire ma réputation. Vous avez mes coordonnées directes et je suis réactif.</p></div>
+              <div class="faq-item"><strong>Je n'y connais rien en informatique, c'est possible quand même ?</strong><p>C'est même fait pour vous. Vous me dites juste ce que vous voulez en mots simples, je m'occupe du reste.</p></div>
+              <div class="faq-item"><strong>Comment se passe le paiement ?</strong><p>Je vous envoie le site terminé pour validation, et vous payez uniquement quand vous êtes satisfait.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POURQUOI MOI -->
+    <section id="confiance" class="why-section" aria-labelledby="why-title">
+      <div class="section-inner">
+        <div class="section-label">Pourquoi choisir CrtDev</div>
+        <h2 class="section-heading" id="why-title">Ce que vous<br/>obtenez vraiment.</h2>
+        <div class="why-grid">
+          <div class="why-card"><div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Prix imbattable</h3><p>Une agence vous facturera 800€ à 3 000€ pour le même résultat. À 150€, vous prenez zéro risque financier.</p></div>
+          <div class="why-card"><div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>Livraison rapide</h3><p>Pas de file d'attente, pas de réunions à rallonge. Vous m'expliquez votre projet, je livre en environ une semaine.</p></div>
+          <div class="why-card"><div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Communication directe</h3><p>Vous avez mon email personnel. Pas de ticket de support, pas d'intermédiaire. Je réponds dans la journée.</p></div>
+          <div class="why-card"><div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div><h3>Design moderne</h3><p>Je me forme en continu aux dernières tendances du web. Votre site aura l'air actuel, pas vieux de 10 ans.</p></div>
+          <div class="why-card"><div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Vous payez après</h3><p>Je vous montre le site terminé avant tout paiement. Si ça ne vous convient pas, on ajuste. Aucun risque.</p></div>
+          <div class="why-card"><div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div><h3>Mobile d'abord</h3><p>Chaque site est conçu pour être parfait sur smartphone, parce que c'est là que vos clients vous trouvent.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="section-inner">
+        <div class="contact-grid">
+          <div class="contact-left">
+            <div class="section-label">Travaillons ensemble</div>
+            <h2 class="section-heading" id="contact-title">Décrivez-moi<br/>votre projet.</h2>
+            <p class="contact-desc">Pas besoin d'être technique. Dites-moi simplement ce que vous faites et ce que vous souhaitez. Je m'occupe du reste.</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <button class="copy-btn" id="copy-btn" aria-live="polite"><span id="copy-text">adrianocorrenti45@gmail.com</span></button>
+              </div>
+            </div>
+            <div class="contact-reassurance">
+              <p>✓ Réponse sous 24h</p>
+              <p>✓ Devis gratuit et sans engagement</p>
+              <p>✓ Vous payez seulement si vous êtes satisfait</p>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label for="name">Votre prénom</label><input type="text" id="name" name="name" placeholder="Marie" autocomplete="given-name" required /></div>
+              <div class="form-group"><label for="email">Votre email</label><input type="email" id="email" name="email" placeholder="marie@exemple.fr" autocomplete="email" required /></div>
+            </div>
+            <div class="form-group">
+              <label for="project-type">Type de projet</label>
+              <select id="project-type" name="project-type"><option value="">Quel type de site ?</option><option>Site Vitrine</option><option>Page de Vente</option><option>Portfolio / CV en ligne</option><option>Refonte de Site</option><option>Je ne sais pas encore</option></select>
+            </div>
+            <div class="form-group"><label for="message">Décrivez votre activité et ce que vous voulez</label><textarea id="message" name="message" rows="4" placeholder="Ex : Je suis coiffeure à domicile, j'ai besoin d'un site simple pour que les gens puissent me contacter et voir mes tarifs…" required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">Envoyer ma demande <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            <p class="form-note">Gratuit et sans engagement · Je réponds personnellement</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <a href="#" class="nav-logo">Crt<span>Dev</span></a>
+        <p class="footer-tagline">Sites web modernes · Tarif étudiant</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#realisations">Exemples</a>
+        <a href="#tarif">Tarif</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CrtDev · Adriano</p>
+      <p>adrianocorrenti45@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
