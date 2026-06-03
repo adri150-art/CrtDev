@@ -390,9 +390,15 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 56
    MOBILE ≤ 768px
 ════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
+  /* Navbar mobile : logo + burger uniquement */
+  .nav-links { display: none; }
+  .btn-nav { display: none; }
   .hamburger { display: flex; }
   .mobile-menu { display: flex; pointer-events: none; }
   .mobile-menu.open { pointer-events: auto; }
+  /* La pilule ne se rétrécit pas sur mobile */
+  .navbar.scrolled .nav-inner { max-width: 100%; border-radius: 0; height: 56px; padding: 0 20px; background: rgba(10,10,10,0.88); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: none; border-bottom: 1px solid var(--border); box-shadow: none; }
+  [data-theme="light"] .navbar.scrolled .nav-inner { background: rgba(255,255,255,0.88); }
 
   section { padding: 56px 20px; }
   .section-label { margin-bottom: 10px; }
